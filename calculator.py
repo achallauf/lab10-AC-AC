@@ -41,7 +41,7 @@ def div(a, b):
     try:
         return b / a
     except ZeroDivisionError:
-        return "Error: Division by zero"
+        raise
 
 
 
