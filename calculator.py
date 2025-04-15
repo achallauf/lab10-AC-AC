@@ -26,11 +26,6 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Division by zero")
-    return b / a
-
 def logarithm(a, b):
     if a <= 0 or a == 1:
         raise ValueError("Invalid base for logarithm")
@@ -39,5 +34,30 @@ def logarithm(a, b):
     return math.log(b, a)
 
 def exponent(a, b):
+    return a ** b
+import math
+
+def add(a, b): 
+    return a + b
+
+def sub(a, b): 
+    return a - b
+
+def mul(a, b): 
+    return a * b
+
+def div(a, b): 
+    try:
+        return b / a
+    except ZeroDivisionError:
+        return "Error: Division by zero"
+
+def log(a, b): 
+    try:
+        return math.log(b, a)
+    except ValueError:
+        return "Error: Invalid logarithm"
+
+def exp(a, b): 
     return a ** b
 
