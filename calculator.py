@@ -1,9 +1,8 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#https://github.com/achallauf/lab10-AC-AC.git
+#Partner 1 - Akhil Challa
+#Partner 2 - Akhil Challa
 
-One function per operation, in order.
-"""
+
 import math
 
 def square_root(a):

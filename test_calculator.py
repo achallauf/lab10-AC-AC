@@ -1,3 +1,7 @@
+#https://github.com/achallauf/lab10-AC-AC.git
+#Partner 1 - Akhil Challa
+#Partner 2 - Akhil Challa
+
 import unittest
 from calculator import *
 
@@ -15,15 +19,15 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(multiply(3, 4), 12)
-        self.assertEqual(multiply(-2, 5), -10)
-        self.assertEqual(multiply(0, 5), 0)
+        self.assertEqual(mul(3, 4), 12)
+        self.assertEqual(mul(-2, 5), -10)
+        self.assertEqual(mul(0, 5), 0)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(divide(10, 2), 5)
-        self.assertAlmostEqual(divide(7, 2), 3.5)
+        self.assertEqual(div(2, 10), 5)
+        self.assertAlmostEqual(div(2, 7), 3.5)
         with self.assertRaises(ValueError):
-            divide(5, 0)
+            div(0, 5)
     # ##########################
 
 
