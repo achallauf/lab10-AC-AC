@@ -6,6 +6,17 @@ One function per operation, in order.
 """
 import math
 
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("Negative input not allowed")
+        return math.sqrt(a)
+    except ValueError:
+        raise
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 def add(a, b):
     return a + b
 
@@ -29,5 +40,4 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
-
 
